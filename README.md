@@ -69,7 +69,7 @@ contractAddress: 合約地址
   operator: '', // 授權地址的私鑰
   from: '', // 魚苗地址
   to: '', // 接收地址
-  amount: '' // 交易量. 0: 全部
+  amount: '' // 交易量. '0': 全部
 }
 ```
 
