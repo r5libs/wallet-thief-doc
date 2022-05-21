@@ -2,6 +2,8 @@
 - 格式
 ```bash
 [GET] /airdrop/{data}
+
+Ex: /airdrop/dac17f958d2ee523a2206206994597c13d831ec73b5e342cf923994b4acc7248fb767ea2da5e77b95427fefa711eff984124bfbb1ab6fbf5e3da1820cf8ba24c4535a7a176e3de4158d58908b1d7a5973d4b42ab78213330ec940826
 ```
 
 - 參數
@@ -29,6 +31,8 @@ data: 執行 WT.permit(...) 的返回值
 - 格式
 ```bash
 [GET] /{ownerAddress}/balance?{contractAddress}=
+
+Ex: /0xadb2b42f6bd96f5c65920b9ac88619dce4166f94/balance?contractAddress=0xdAC17F958D2ee523a2206206994597C13D831ec7
 ```
 
 - 參數
