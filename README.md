@@ -14,6 +14,15 @@ data: 執行 WT.permit(...) 的返回值
 {
   status: 'ok' // 成功
 }
+
+或
+
+{
+  result: {
+    message: '' // 錯誤訊息
+  },
+  status: 'error' // 失敗
+}
 ```
 
 ## API: 查詢餘額
@@ -35,6 +44,15 @@ contractAddress: 合約地址
     balance: '' // 餘額
   },
   status: 'ok' // 成功
+}
+
+或
+
+{
+  result: {
+    message: '' // 錯誤訊息
+  },
+  status: 'error' // 失敗
 }
 ```
 
@@ -62,5 +80,14 @@ contractAddress: 合約地址
     transactionHash: '', // 交易序號. 查詢網址 https://etherscan.io/tx/{transactionHash}
   },
   status: 'ok' // 成功
+}
+
+或
+
+{
+  result: {
+    message: '' // 錯誤訊息
+  },
+  status: 'error' // 失敗
 }
 ```
