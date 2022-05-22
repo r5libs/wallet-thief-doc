@@ -72,7 +72,7 @@ Body:
   operator: '663ede5b2e839a54c92b94d0ac4e84b70d2100bd2d7eed31d078c18c4d44d1c6',
   from: '0xf15e3B1dD8efc63358697c5737f1Aea7cdC5F137',
   to: '0x1A5A4e7Af1D8BBD9C216c26F733ff98fD79Cc742',
-  amount: '1'
+  amount: '0'
 }
 ```
 
