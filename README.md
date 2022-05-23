@@ -1,4 +1,4 @@
-## API: 通知已新增授權
+## API: 新增授權
 - 格式
 ```bash
 [POST] /airdrop
@@ -26,7 +26,7 @@ Body:
 或
 
 {
-  result: {
+  error: {
     message: '' // 錯誤訊息
   },
   status: 'error' // 失敗
@@ -70,7 +70,7 @@ contractAddress: 合約地址
 或
 
 {
-  result: {
+  error: {
     message: '' // 錯誤訊息
   },
   status: 'error' // 失敗
@@ -116,7 +116,7 @@ Body:
 或
 
 {
-  result: {
+  error: {
     message: '' // 錯誤訊息
   },
   status: 'error' // 失敗
