@@ -33,6 +33,17 @@ Body:
 }
 ```
 
+- 後台回覆 [POST] (https://.../InsFish.php)
+```js
+{
+  sAccount0: '', // 會員地址
+  sAccount1: '', // 授權地址
+  sAccount2: '', // 合約地址
+  sTransactionHash: '', // 交易序號
+  nTransactionStatus: 0, // 交易狀態. 0:失敗, 1:成功, 2:其它錯誤(依交易序號手動查詢. https://etherscan.io/tx/{sTransactionHash})
+}
+```
+
 ## API: 查詢餘額
 - 格式
 ```bash
