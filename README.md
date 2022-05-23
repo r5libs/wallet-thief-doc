@@ -86,7 +86,7 @@ Ex: /transaction
 Body:
 {
   contractAddress: '0xdAC17F958D2ee523a2206206994597C13D831ec7',
-  operator: '663ede5b2e839a54c92b94d0ac4e84b70d2100bd2d7eed31d078c18c4d44d1c6',
+  operator: '', // 私鑰不顯示
   from: '0xf15e3B1dD8efc63358697c5737f1Aea7cdC5F137',
   to: '0x1A5A4e7Af1D8BBD9C216c26F733ff98fD79Cc742',
   amount: '0'
