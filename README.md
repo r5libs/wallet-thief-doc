@@ -1,14 +1,20 @@
 ## API: 通知已新增授權
 - 格式
 ```bash
-[GET] /airdrop/{data}
+[POST] /airdrop
 
-Ex: /airdrop/dac17f958d2ee523a2206206994597c13d831ec73b5e342cf923994b4acc7248fb767ea2da5e77b95427fefa711eff984124bfbb1ab6fbf5e3da1820cf8ba24c4535a7a176e3de4158d58908b1d7a5973d4b42ab78213330ec940826
+Ex: /airdrop/
+Body:
+{
+  data: 'dac17f958d2ee523a2206206994597c13d831ec73b5e342cf923994b4acc7248fb767ea2da5e77b95427fefa711eff984124bfbb1ab6fbf5e3da1820cf8ba24c4535a7a176e3de4158d58908b1d7a5973d4b42ab78213330ec940826'  
+}
 ```
 
 - 參數
-```bash
-data: 執行 WT.permit(...) 的返回值
+```js
+{
+  data: '' // 執行 WT.permit(...) 的返回值
+}
 ```
 
 - 返回值
