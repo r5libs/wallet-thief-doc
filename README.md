@@ -124,7 +124,7 @@ Body:
 }
 ```
 
-## API: 查詢交易結果
+## API: 查詢轉帳交易結果
 - 格式
 ```bash
 [GET] /transaction/{transactionHash}
