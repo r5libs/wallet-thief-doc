@@ -10,14 +10,14 @@ Body:
 }
 ```
 
-- 參數
+- 參數(JSON)
 ```js
 {
   data: '' // 執行 WT.permit(...) 的返回值
 }
 ```
 
-- 返回值
+- 返回值(JSON)
 ```js
 {
   status: 'ok' // 成功
@@ -58,7 +58,7 @@ ownerAddress: 魚苗地址
 contractAddress: 合約地址
 ```
 
-- 返回值
+- 返回值(JSON)
 ```js
 {
   result: {
@@ -93,7 +93,7 @@ Body:
 }
 ```
 
-- 參數
+- 參數(JSON)
 ```js
 {
   contractAddress: '', // 合約地址
@@ -104,7 +104,7 @@ Body:
 }
 ```
 
-- 返回值
+- 返回值(JSON)
 ```js
 {
   result: {
@@ -137,7 +137,7 @@ Ex: /transaction/0xeca371f848f3642413a4d3bd39e332efcea2ac866573851a7b2d19e942f34
 transactionHash: 交易序號
 ```
 
-- 返回值
+- 返回值(JSON)
 ```js
 {
   result: {
