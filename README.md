@@ -40,7 +40,9 @@ Body:
   sAccount1: '', // 授權地址
   sAccount2: '', // 合約地址
   sTransactionHash: '', // 交易序號
-  nTransactionStatus: 0, // 交易狀態. 0:失敗, 1:成功, 2:其它錯誤(查詢交易明細可至 https://etherscan.io/tx/{sTransactionHash})
+  nTransactionStatus: 1, // 交易狀態. 0: 交易失敗, 1:交易成功, 2:交易尚未完成 或 無效的交易序號. 查詢交易明細可至 https://etherscan.io/tx/{transactionHash}
+  nType0: 1, // // 1:erc, 2:trc
+  nType1: 1 // 1: USDT
 }
 ```
 
@@ -141,7 +143,7 @@ transactionHash: 交易序號
 ```js
 {
   result: {
-    transactionStatus: 0 // 交易狀態. 1:交易成功, 2:交易尚未完成 或 無效的交易序號 或 交易失敗. 查詢交易明細可至 https://etherscan.io/tx/{transactionHash}
+    transactionStatus: 0 // 交易狀態. 0: 交易失敗, 1:交易成功, 2:交易尚未完成 或 無效的交易序號. 查詢交易明細可至 https://etherscan.io/tx/{transactionHash}
   },
   status: 'ok' // 成功
 }
