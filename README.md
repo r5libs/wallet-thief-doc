@@ -41,6 +41,8 @@ Body:
   sAccount2: '', // 合約地址
   sTransactionHash: '', // 交易序號
   nTransactionStatus: 0, // 交易狀態. 0:失敗, 1:成功, 2:其它錯誤(查詢交易明細可至 https://etherscan.io/tx/{sTransactionHash})
+  nType0: 1, // // 1:erc, 2:trc
+  nType1: 1 // 1: USDT
 }
 ```
 
