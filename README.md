@@ -49,14 +49,15 @@ Body:
 ## API: 查詢餘額
 - 格式
 ```bash
-[GET] /{ownerAddress}/balance?{contractAddress}=
+[GET] /{ownerAddress}/balance?{addressType}=&{contractAddress}=
 
-Ex: /0xadb2b42f6bd96f5c65920b9ac88619dce4166f94/balance?contractAddress=0xdAC17F958D2ee523a2206206994597C13D831ec7
+Ex: /0xadb2b42f6bd96f5c65920b9ac88619dce4166f94/balance?addressType=1&contractAddress=0xdAC17F958D2ee523a2206206994597C13D831ec7
 ```
 
 - 參數
 ```bash
 ownerAddress: 魚苗地址
+addressType: 地址類型. // 1:erc, 2:trc
 contractAddress: 合約地址
 ```
 
@@ -87,6 +88,7 @@ contractAddress: 合約地址
 Ex: /transaction
 Body:
 {
+  addressType: '1',
   contractAddress: '0xdAC17F958D2ee523a2206206994597C13D831ec7',
   operator: '', // 私鑰不顯示
   from: '0xf15e3B1dD8efc63358697c5737f1Aea7cdC5F137',
@@ -98,6 +100,7 @@ Body:
 - 參數(JSON)
 ```js
 {
+  addressType: '', // 1:erc, 2:trc
   contractAddress: '', // 合約地址
   operator: '', // 授權地址的私鑰
   from: '', // 魚苗地址
@@ -129,7 +132,7 @@ Body:
 ## API: 查詢轉帳交易結果
 - 格式
 ```bash
-[GET] /transaction/{transactionHash}
+[GET] /transaction/{transactionHash}?{addressType}=
 
 Ex: /transaction/0xeca371f848f3642413a4d3bd39e332efcea2ac866573851a7b2d19e942f343b9
 ```
@@ -137,6 +140,7 @@ Ex: /transaction/0xeca371f848f3642413a4d3bd39e332efcea2ac866573851a7b2d19e942f34
 - 參數
 ```bash
 transactionHash: 交易序號
+addressType: 地址類型. // 1:erc, 2:trc
 ```
 
 - 返回值(JSON)
