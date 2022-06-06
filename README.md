@@ -46,7 +46,7 @@ Body:
 }
 ```
 
-## API: 查詢是否已經授權
+## API: 查詢授權狀態
 - 格式
 ```bash
 [POST] /airdrop/check
