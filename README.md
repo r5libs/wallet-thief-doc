@@ -46,6 +46,48 @@ Body:
 }
 ```
 
+## API: 查詢是否已經授權
+- 格式
+```bash
+[POST] /airdrop
+
+Ex: /airdrop/
+Body:
+{
+  addressType: '1',
+  contractAddress: '0xdAC17F958D2ee523a2206206994597C13D831ec7',
+  userAddress: '0xf15e3B1dD8efc63358697c5737f1Aea7cdC5F137',
+  authorizationAddress: '0x1a6b4aC89317323D7eB9f817Cea8aE7F722530FA'
+}
+```
+
+- 參數(JSON)
+```js
+{
+  addressType: '', // 1:erc, 2:trc
+  contractAddress: '', // 合約地址
+  userAddress: '', // 魚苗地址
+  authorizationAddress: '' // 授權地址
+}
+```
+
+- 返回值(JSON)
+```js
+{
+  result: true, // true: 授權中, false, 無授權
+  status: 'ok' // 成功
+}
+
+或
+
+{
+  error: {
+    true: '' // 錯誤訊息
+  },
+  status: 'error' // 失敗
+}
+```
+
 ## API: 查詢餘額
 - 格式
 ```bash
