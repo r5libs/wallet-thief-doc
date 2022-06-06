@@ -49,9 +49,9 @@ Body:
 ## API: 查詢是否已經授權
 - 格式
 ```bash
-[POST] /airdrop
+[POST] /airdrop/check
 
-Ex: /airdrop/
+Ex: /airdrop/check
 Body:
 {
   addressType: '1',
